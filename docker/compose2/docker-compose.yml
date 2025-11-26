@@ -1,0 +1,30 @@
+services:
+  web:
+    build: .
+    container_name: web_app
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: app_user
+      DB_PASSWORD: secret
+      DB_NAME: app_db
+    ports:
+      - "8080:8000"
+
+
+  db:
+    image: postgres:16
+    container_name: simple_db
+    environment:
+      POSTGRES_DB: app_db
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  db_data:
