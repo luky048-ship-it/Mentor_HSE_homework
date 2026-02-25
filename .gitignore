@@ -1,0 +1,71 @@
+# === Игнорировать файлы Windows (Alternate Data Streams) ===
+*:Zone.Identifier
+
+# === Игнорировать вложенные репозитории (если не нужны как submodule) ===
+docker/compose9/superset/
+
+# === Игнорировать системные файлы macOS ===
+.DS_Store
+
+# === Игнорировать временные файлы и бэкапы ===
+*.swp
+*.swo
+*~
+*.bak
+
+# === Игнорировать файлы с окружением и паролями (важно!) ===
+.env
+*.env
+config.local.yml
+
+# === Игнорировать собранные артефакты Python ===
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === Игнорировать виртуальные окружения ===
+venv/
+ENV/
+env/
+.venv/
+
+# === Игнорировать Jupyter Notebook чекипоинты ===
+.ipynb_checkpoints/
+
+# === Игнорировать логи и БД (если не нужны в репо) ===
+*.log
+*.sqlite3
+*.db
+
+# === Практика и сторонние инструменты (не пушить) ===
+
+# Папки с Grafana и Prometheus (если это скачанные примеры)
+docker/compose8/Grafana_practice/
+docker/compose8/Docker-Compose-Prometheus-and-Grafana/
+
+# Папка Superset (вложенный репозиторий)
+docker/compose9/superset/
+
+# Файлы Windows (метки скачивания)
+*:Zone.Identifier
+
+# Временные файлы и кэш Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

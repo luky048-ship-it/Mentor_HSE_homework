@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="9" failures="2" skipped="11" tests="46" time="3.900" timestamp="2025-12-11T21:07:39.229308+04:00" hostname="DESKTOP-3S80UOO"><testcase classname="tests.test_calculator" name="test_add" time="0.000" /><testcase classname="tests.test_calculator" name="test_subtract" time="0.000" /><testcase classname="tests.test_calculator" name="test_multiply" time="0.000" /><testcase classname="tests.test_calculator" name="test_divide" time="0.000" /><testcase classname="tests.test_calculator" name="test_divide_by_zero" time="0.000" /><testcase classname="tests.test_calculator" name="test_power[2-3-8]" time="0.000" /><testcase classname="tests.test_calculator" name="test_power[1-5-1]" time="0.000" /><testcase classname="tests.test_calculator" name="test_power[0-5-0]" time="0.000" /><testcase classname="tests.test_calculator" name="test_power[5-0-1]" time="0.000" /><testcase classname="tests.test_calculator" name="test_power[-2-3--8]" time="0.000" /><testcase classname="tests.test_calculator" name="test_power[2--2-0.25]" time="0.000" /><testcase classname="tests.test_calculator" name="test_heavy_computation" time="2.001" /><testcase classname="tests.test_calculator" name="test_fast_operation" time="0.000" /><testcase classname="tests.test_calculator" name="test_another_slow_computation" time="1.001" /><testcase classname="tests.test_calculator" name="test_feature_in_development" time="0.000"><skipped type="pytest.skip" message="Тест в разработке, еще не готов">/home/stas/project/Mentor_HSE_homework/pytest_example_6/tests/test_calculator.py:64: Тест в разработке, еще не готов</skipped></testcase><testcase classname="tests.test_calculator" name="test_python_version_check" time="0.000" /><testcase classname="tests.test_calculator" name="test_linux_only" time="0.000" /><testcase classname="tests.test_calculator" name="test_not_for_mac" time="0.000" /><testcase classname="tests.test_calculator" name="test_multiple_conditions" time="0.000" /><testcase classname="tests.test_calculator" name="test_platform_specific_logic" time="0.000" /><testcase classname="tests.test_calculator" name="test_with_optional_dependency" time="0.000"><skipped type="pytest.skip" message="Требуется numpy">/home/stas/project/Mentor_HSE_homework/pytest_example_6/tests/test_calculator.py:114: Требуется numpy</skipped></testcase><testcase classname="tests.test_calculator" name="test_skip_in_ci" time="0.000" /><testcase classname="tests.test_calculator" name="test_known_issue" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_calculator" name="test_float_precision_issue" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_calculator" name="test_should_fail" time="0.001"><skipped type="pytest.xfail" message="Должен падать" /></testcase><testcase classname="tests.test_calculator" name="test_might_fail" time="0.001"><skipped type="pytest.xfail" message="Может проходить или падать" /></testcase><testcase classname="tests.test_calculator" name="test_not_run" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_calculator" name="test_platform_specific_bug" time="0.000" /><testcase classname="tests.test_calculator" name="test_expected_exception" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_calculator" name="test_unexpected_success" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_calculator" name="test_python_version_bug" time="0.001"><failure message="assert 1024 == 1025">tests/test_calculator.py:195: in test_python_version_bug
+    assert result == 1025  # Нарочно неправильно
+    ^^^^^^^^^^^^^^^^^^^^^
+E   assert 1024 == 1025</failure></testcase><testcase classname="tests.test_skip_tests.TestSkipConditions" name="test_specific_platform" time="0.000" /><testcase classname="tests.test_skip_tests.TestSkipConditions" name="test_linux_only" time="0.000" /><testcase classname="tests.test_skip_tests.TestSkipConditions" name="test_python_38_plus" time="0.000" /><testcase classname="tests.test_xfail_examples.TestXFailExamples" name="test_simple_xfail" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_xfail_examples.TestXFailExamples" name="test_unexpected_success" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_xfail_examples.TestXFailExamples" name="test_linux_bug" time="0.000"><skipped type="pytest.xfail" message="Известная проблема на Linux" /></testcase><testcase classname="tests.test_xfail_examples.TestXFailExamples" name="test_skip_execution" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_xfail_examples.TestXFailExamples" name="test_expected_zero_division" time="0.000"><error message="failed on setup with &quot;ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'&quot;">../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:353: in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/runner.py:245: in &lt;lambda&gt;
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/logging.py:843: in pytest_runtest_setup
+    yield
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/capture.py:895: in pytest_runtest_setup
+    return (yield)
+            ^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:253: in pytest_runtest_setup
+    item.stash[xfailed_key] = xfailed = evaluate_xfail_marks(item)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/skipping.py:220: in evaluate_xfail_marks
+    strict = item.config.getini("strict_xfail")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1662: in getini
+    self._inicache[canonical_name] = val = self._getini(canonical_name)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1704: in _getini
+    return self._getini_ini(name, canonical_name, type, value, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:1753: in _getini_ini
+    return _strtobool(str(value).strip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../pytest_example/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py:2069: in _strtobool
+    raise ValueError(f"invalid truth value {val!r}")
+E   ValueError: invalid truth value 'false  # по умолчанию unexpected success не считается ошибкой'</error></testcase><testcase classname="tests.test_xfail_examples.TestXFailExamples" name="test_must_fail" time="0.000"><skipped type="pytest.xfail" message="Должен всегда падать" /></testcase><testcase classname="tests.test_xfail_examples.TestXFailExamples" name="test_conditional_xfail" time="0.000"><failure message="NameError: name 'some_condition' is not defined">tests/test_xfail_examples.py:53: in test_conditional_xfail
+    if some_condition():  # Предположим, есть какое-то условие
+       ^^^^^^^^^^^^^^
+E   NameError: name 'some_condition' is not defined</failure></testcase><testcase classname="tests.test_xfail_scenarios" name="test_xfail_vs_skip" time="0.000"><skipped type="pytest.xfail" message="Это ожидаемое падение" /></testcase><testcase classname="tests.test_xfail_scenarios" name="test_skip_example" time="0.000"><skipped type="pytest.skip" message="Пропускаем этот тест">/home/stas/project/Mentor_HSE_homework/pytest_example_6/tests/test_xfail_scenarios.py:15: Пропускаем этот тест</skipped></testcase><testcase classname="tests.test_xfail_scenarios" name="test_conditional_xfail_in_test" time="0.000"><skipped type="pytest.xfail" message="Случайное условие выполнено" /></testcase><testcase classname="tests.test_xfail_scenarios" name="test_strict_xfail" time="0.000"><skipped type="pytest.xfail" message="Должен падать" /></testcase><testcase classname="tests.test_xfail_scenarios" name="test_non_strict_xfail" time="0.000"><skipped type="pytest.xfail" message="Может проходить" /></testcase></testsuite></testsuites>

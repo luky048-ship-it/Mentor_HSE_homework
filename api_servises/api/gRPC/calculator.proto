@@ -1,0 +1,27 @@
+
+syntax = "proto3";
+
+package demo;
+
+service Calculator {
+  rpc Add (AddRequest) returns (AddResponse);
+  rpc Hello (HelloRequest) returns (HelloResponse);
+}
+
+message AddRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message AddResponse {
+  int32 result = 1;
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string greeting = 1;
+}
+
